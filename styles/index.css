@@ -135,7 +135,16 @@ a {
     height: 100%;
 }
 
+.gallery {
+    background-color: #3C1C0B;
+    height: 600px;
+}
 
+.touch .container {
+    background-color: #E9E2DD;
+    width: 60%;
+    margin: 150px auto;
+}
 
 footer {
     background-color: #DBCAAA;
