@@ -22,6 +22,14 @@ h2 {
     color: #3C1C0B;
 }
 
+h3 {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 27px;
+    color: #000000;
+}
+
 p a {
     font-family: "Open Sans", sans-serif;
 }
@@ -150,10 +158,27 @@ a {
     box-shadow: 6px 6px 15px 0px #7c7c7c;
 }
 
-span {
-    float: right;
-    padding: 12px 15px;
-    color: #7c7c7c;
+.modal_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 1.5% auto;
+    border-bottom: #000000 solid 1px;
+    padding: 0 0 1.5% 0;
+}
+
+.modal_images {
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    padding: 1.5% 6%;
+}
+
+.modal_images div {
+    width: 50%;
+    height: 150px;
+    border: #000000 1px solid;
 }
 
 .gallery {

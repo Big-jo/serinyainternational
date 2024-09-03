@@ -33,3 +33,9 @@ planate_door_btn.onclick = function () {
 planate_close.onclick = function () {
     planate_door.style.display = "none";
 }
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
