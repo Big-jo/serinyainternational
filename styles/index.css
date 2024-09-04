@@ -63,6 +63,7 @@ a {
     color: #FFFFFF;
 }
 
+/*/////////////////////////////////////////////////////////*/
 /* HERO */
 .hero-section {
     height: 106vh;
@@ -113,11 +114,13 @@ a {
     font-size: 15px;
 }
 
-.container {
+/*/////////////////////////////////////////////////////////*/
+/* PRODUCTS SECTION */
+.products-section {
     width: 100%;
 }
 
-.shop {
+.products {
     width: 84%;
     margin: auto;
     display: flex;
@@ -127,7 +130,7 @@ a {
     border-bottom: 1px solid #7c7c7c;
 }
 
-.right, .left {
+.product-image, .product-description {
     width: 47%;
     display: flex;
     gap: 27px;
@@ -135,7 +138,7 @@ a {
     align-items: self-start;
 }
 
-.right img {
+.product-image img {
     border-radius: 2%;
     object-fit: fill;
     width: 100%;
@@ -155,7 +158,7 @@ a {
     box-shadow: 6px 6px 15px 0px #7c7c7c;
 }
 
-.modal_header {
+.modal-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -165,25 +168,29 @@ a {
     padding: 0 0 1.5% 0;
 }
 
-.modal_images {
+.modal-images {
     display: flex;
     flex-direction: row;
     gap: 9px;
     padding: 1.5% 6%;
 }
 
-.modal_images div {
+.modal-images div {
     width: 50%;
     height: 150px;
     border: #000000 1px solid;
 }
 
+/*/////////////////////////////////////////////////////////*/
+/* GALLERY */
 .gallery {
     background-color: #3C1C0B;
     height: 600px;
 }
 
-.touch .container {
+/*/////////////////////////////////////////////////////////*/
+/* GET IN TOUCH */
+.contact-section .container {
     background-color: #E9E2DD;
     width: 72%;
     margin: 150px auto;
@@ -194,7 +201,7 @@ a {
     align-items: center;
 }
 
-.touch .address {
+.contact-section .address-container {
     display: flex;
     flex-direction: column;
     gap: 72px;
@@ -228,6 +235,8 @@ textarea {
     height: 150px;
 }
 
+/*/////////////////////////////////////////////////////////*/
+/* FOOTER */
 footer {
     background-color: #DBCAAA;
     
