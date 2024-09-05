@@ -43,11 +43,15 @@
     
 /*/////////////////////////////////////////////////////////*/
 /* HERO */
+    .hero-section {
+        width: 100%;
+        height: 105vh;
+    }
+
     .hero-image {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        display: none;
     }
     
     .hero-content {
