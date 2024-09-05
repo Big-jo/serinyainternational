@@ -251,3 +251,10 @@
         font-weight: 600;
     }
 }
+
+@media (max-height: 480px) {
+    .hero-section {
+        height: 250%;
+        width: 100%;
+    }
+}
