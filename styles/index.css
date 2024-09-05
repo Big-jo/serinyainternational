@@ -190,7 +190,7 @@ a {
 
 /*/////////////////////////////////////////////////////////*/
 /* GET IN TOUCH */
-.contact-section .container {
+.get-in-touch {
     background-color: #E9E2DD;
     width: 72%;
     margin: 150px auto;
@@ -198,14 +198,12 @@ a {
     border-radius: 12px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
-.contact-section .address-container {
+.get-in-touch-info {
     display: flex;
     flex-direction: column;
     gap: 72px;
-    align-items: flex-start;
 }
 
 form {
@@ -252,6 +250,7 @@ footer {
 
 .footer li {
     list-style: none;
+    text-align: center;
 }
 
 .footer a {

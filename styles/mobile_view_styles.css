@@ -36,6 +36,10 @@
         background-color: #A2552E;
         color: #FFFFFF;
     }
+
+    .xs {
+        display: none;
+    }
     
 /*/////////////////////////////////////////////////////////*/
 /* HERO */
@@ -160,48 +164,86 @@
 
 /*/////////////////////////////////////////////////////////*/
 /* GET IN TOUCH */
-.contact-section .container {
-    background-color: #E9E2DD;
-    width: 100%;
-    margin: 0;
-    padding: 222px;
-    border-radius: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+    .get-in-touch {
+        background-color: #E9E2DD;
+        width: 100%;
+        margin: auto;
+        border-radius: 0;
+        padding: 24% 6%;
+        display: block;
+    }
 
-.contact-section .address-container {
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
-    align-items: flex-start;
-}
+    .get-in-touch-info {
+        width: 100%;
+        margin: auto;
+        display: block;
+        padding: 0 0 30px 0;
+    }
 
-form {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    gap: 21px;
-    align-items: self-start;
-}
+    form {
+        width: 96%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: self-start;
+    }
 
-form div {
-    width: 100%;
-}
+    form div {
+        width: 100%;
+    }
 
-input, textarea {
-    width: 100%;
-    height: 39px;
-    border-radius: 6px;
-    font-size: 18px;
-    padding: 6px 9px;
-    background-color: #F5F5F4;
-    border: #A2552E 1px solid;
-    outline: none;
-}
+    input, textarea {
+        width: 100%;
+        height: 39px;
+        border-radius: 6px;
+        font-size: 15px;
+        padding: 6px 9px;
+        background-color: #F5F5F4;
+        border: #A2552E 1px solid;
+        outline: none;
+    }
 
-textarea {
-    height: 150px;
-}
+    textarea {
+        height: 210px;
+    }
+
+/*/////////////////////////////////////////////////////////*/
+/* FOOTER */
+    footer {
+        background-color: #DBCAAA;
+        padding: 12% 0 0 0;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+        justify-content: center;
+        padding: 2% 0;
+    }
+
+    .footer li {
+        list-style: none;
+        text-align: center;
+    }
+
+    .footer a {
+        color: #3C1C0B;
+        font-size: 12px;
+    }
+
+    .footer a:hover {
+        color: #000000;
+        text-decoration: underline;
+    }
+
+    .footer img {
+        width: 12%;
+    }
+
+    .copyright {
+        font-size: 12px;
+        font-weight: 600;
+    }
 }
