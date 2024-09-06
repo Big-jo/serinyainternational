@@ -13,7 +13,7 @@ function showSlides() {
     setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
 
-
+// Controls for Modal
 var double_close = document.getElementById("close-double-door");
 var glass_close = document.getElementById("close-glass-insert");
 var planate_close = document.getElementById("close-planate-door");
