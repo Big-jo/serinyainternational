@@ -1,4 +1,4 @@
-@media (max-width:600px) {    
+@media (max-width:768px) {    
     h1 {
         font-weight: 900;
         font-style: normal;
@@ -131,7 +131,7 @@
     /*/////////////////////////////////////////////////////////*/
     /* MODAL */
     .modal {
-        display: block;
+        display: none;
         position: fixed;
         top: 1%;
         left: 1%;
@@ -156,22 +156,24 @@
 
     /* MODAL (PRODUCTS) */
     .modal-images {
-        display: flex;
-        flex-direction: column;
-        gap: 21px;
-        padding: 1% 3%;
+        width: 94%;
+        margin: auto;
+        height: 84vh;
+        
     }
 
-    .modal-images div {
+    .fade {
         width: 100%;
-        height: 83vh;
-        border: #000000 1px solid;
+        height: 100%;
+        display: none;
+        
     }
 
-    .modal-images img {
+    .fade img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 6px;
     }
 
 /*/////////////////////////////////////////////////////////*/

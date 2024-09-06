@@ -1,3 +1,19 @@
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("doubleSlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+
+
 var double_close = document.getElementById("close-double-door");
 var glass_close = document.getElementById("close-glass-insert");
 var planate_close = document.getElementById("close-planate-door");
@@ -12,6 +28,7 @@ var planate_door = document.getElementById("modal-planate-door");
 
 double_door_btn.onclick = function () {
     double_door.style.display = "block";
+    showSlides();
 }
 
 double_close.onclick = function () {
@@ -39,3 +56,26 @@ window.onclick = function(event) {
       modal.style.display = "none";
     }
   }
+
+//   JS for SlideShow on Mobile View
+
+
+
+
+
+
+
+// let slideIndex = 0;
+// showSlides();
+
+// function showSlides() {
+//     let i;
+//     let slides = document.getElementsByClassName("mySlides");
+//     for (i = 0; i < slides.length; i++) {
+//       slides[i].style.display = "none";
+//     }
+//     slideIndex++;
+//     if (slideIndex > slides.length) {slideIndex = 1}
+//     slides[slideIndex-1].style.display = "block";
+//     setTimeout(showSlides, 2000); // Change image every 2 seconds
+//   }
