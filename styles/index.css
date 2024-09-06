@@ -145,8 +145,10 @@ a {
     height: 100%;
 }
 
+/*/////////////////////////////////////////////////////////*/
+/* MODAL */
 .modal {
-    display: none;
+    display: block;
     position: fixed;
     top: 5%;
     left: 5%;
@@ -168,6 +170,7 @@ a {
     padding: 0 0 1.5% 0;
 }
 
+/* MODAL (PRODUCTS) */
 .modal-images {
     display: flex;
     flex-direction: row;
@@ -177,8 +180,14 @@ a {
 
 .modal-images div {
     width: 50%;
-    height: 150px;
+    height: 420px;
     border: #000000 1px solid;
+}
+
+.modal-images img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
 }
 
 /*/////////////////////////////////////////////////////////*/
