@@ -11,6 +11,36 @@ function showSlides() {
     if (slideIndex > slides.length) {slideIndex = 1}
     slides[slideIndex-1].style.display = "block";
     setTimeout(showSlides, 5000); // Change image every 5 seconds
+};
+
+var glassSlideIndex = 0;
+showGlassSlides();
+
+function showGlassSlides() {
+    var i;
+    var glassSlides = document.getElementsByClassName("glassSlides");
+    for (i = 0; i < glassSlides.length; i++) {
+        glassSlides[i].style.display = "none";
+    }
+    glassSlideIndex++;
+    if (glassSlideIndex > glassSlides.length) {glassSlideIndex = 1}
+    glassSlides[glassSlideIndex-1].style.display = "block";
+    setTimeout(showGlassSlides, 5000); // Change image every 5 seconds
+}
+
+var planateSlideIndex = 0;
+showPlanateSlides();
+
+function showPlanateSlides() {
+    var i;
+    var planateSlides = document.getElementsByClassName("planateSlides");
+    for (i = 0; i < planateSlides.length; i++) {
+        planateSlides[i].style.display = "none";
+    }
+    planateSlideIndex++;
+    if (planateSlideIndex > planateSlides.length) {planateSlideIndex = 1}
+    planateSlides[planateSlideIndex-1].style.display = "block";
+    setTimeout(showPlanateSlides, 5000); // Change image every 5 seconds
 }
 
 // Controls for Modal
@@ -37,6 +67,7 @@ double_close.onclick = function () {
 
 glass_insert_btn.onclick = function () {
     glass_insert.style.display = "block";
+    showGlassSlides();
 };
 
 glass_close.onclick = function () {
