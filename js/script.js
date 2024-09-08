@@ -1,3 +1,20 @@
+// SLIDS CONTROLS FOR MOLDED PANEL DOORS
+var moldedSlideIndex = 0;
+showMoldedSlides();
+
+function showMoldedSlides() {
+    var i;
+    var moldedSlides = document.getElementsByClassName("moldedSlides");
+    for (i = 0; i < moldedSlides.length; i++) {
+        moldedSlides[i].style.display = "none";
+    }
+    moldedSlideIndex++;
+    if (moldedSlideIndex > moldedSlides.length) {moldedSlideIndex = 1}
+    moldedSlides[moldedSlideIndex-1].style.display = "block";
+    setTimeout(showMoldedSlides, 5000); // Change image every 5 seconds
+}
+
+// SLIDS CONTROLS FOR DOUBLE DOORS
 var slideIndex = 0;
 showSlides();
 
@@ -13,6 +30,7 @@ function showSlides() {
     setTimeout(showSlides, 5000); // Change image every 5 seconds
 };
 
+// SLIDS CONTROLS FOR GLASS INSERT DOORS
 var glassSlideIndex = 0;
 showGlassSlides();
 
@@ -28,6 +46,7 @@ function showGlassSlides() {
     setTimeout(showGlassSlides, 5000); // Change image every 5 seconds
 }
 
+// SLIDS CONTROLS FOR PLANATE FLUSH DOORS
 var planateSlideIndex = 0;
 showPlanateSlides();
 
@@ -44,17 +63,30 @@ function showPlanateSlides() {
 }
 
 // Controls for Modal
+var molded_close = document.getElementById("close-molded-door");
 var double_close = document.getElementById("close-double-door");
 var glass_close = document.getElementById("close-glass-insert");
 var planate_close = document.getElementById("close-planate-door");
 
+var molded_door_btn = document.getElementById("molded_door_btn");
 var double_door_btn = document.getElementById("double_door_btn");
 var glass_insert_btn = document.getElementById("glass_insert_btn");
 var planate_door_btn = document.getElementById("planate_door_btn");
 
+var molded_door = document.getElementById("modal-molded-door");
 var double_door = document.getElementById("modal-double-door");
 var glass_insert = document.getElementById("modal-glass-insert");
 var planate_door = document.getElementById("modal-planate-door");
+
+
+molded_door_btn.onclick = function () {
+    molded_door.style.display = "block";
+    showMoldedSlides();
+}
+
+molded_close.onclick = function () {
+    molded_door.style.display = "none";
+};
 
 double_door_btn.onclick = function () {
     double_door.style.display = "block";

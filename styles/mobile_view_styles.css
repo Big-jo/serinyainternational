@@ -55,8 +55,6 @@
     }
     
     .hero-content {
-        position: absolute;
-        top: 0;
         height: 630px;
         width: 100%;
         margin: auto;
@@ -262,6 +260,7 @@
     .copyright {
         font-size: 12px;
         font-weight: 600;
+        padding: 6px 0 9px 0;
     }
 }
 

@@ -27,7 +27,7 @@ h3 {
     font-weight: 900;
     font-style: normal;
     font-size: 27px;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 a {
@@ -67,21 +67,19 @@ color: #FFFFFF;
 /*/////////////////////////////////////////////////////////*/
 /* HERO */
 .hero-section {
-    height: 110vh;
+    padding: 3% 0 9% 0;
     width: 100%;
-}
+    background-image: url(../img/hero.png);
+    background-size: cover;
 
-.hero-image {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
 }
 
 .hero-content {
-    position: absolute;
-    top: 12px;
-    width: 99%;
-    padding: 0 108px;
+    width: 84%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
 }
 
 .logo {
@@ -91,16 +89,14 @@ color: #FFFFFF;
 }
 
 .logo img {
-    width: 192px;
+    width: 15%;
 }
 
 .headline {
-    padding: 66px 0 ;
-    width: 45%;
     display: flex;
     flex-direction: column;
-    gap: 21px;
-    align-items:flex-start;
+    gap: 15px;
+    align-items: self-start;
 }
 
 .contact-info ul {
@@ -275,4 +271,9 @@ footer {
 
 .footer img {
     width: 12%;
+}
+
+.copyright {
+    font-weight: 600;
+    padding-bottom: 9px;
 }
