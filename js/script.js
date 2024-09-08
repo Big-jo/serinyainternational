@@ -1,3 +1,16 @@
+// CONTACT US BUTTON & POPUP CONTROLS
+var contact = document.getElementById("contact");
+var contactList = document.getElementById("contactList");
+var closeContact = document.getElementById("closeContact");
+
+contact.onclick = function () {
+    contactList.style.display = "block";
+}
+
+closeContact.onclick = function () {
+    contactList.style.display = "none";
+}
+
 // SLIDS CONTROLS FOR MOLDED PANEL DOORS
 var moldedSlideIndex = 0;
 showMoldedSlides();

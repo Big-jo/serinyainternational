@@ -21,6 +21,15 @@
         color: #fff4ee;
     }
 
+    h4 {
+        font-family: "Merriweather", serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 15px;
+        color: #525252;
+        padding-bottom: 6px;
+    }
+
     p, a {
         font-size: 15px;
     }
@@ -91,6 +100,45 @@
     .contact-info ul a {
         color: #000000;
         font-size: 15px;
+    }
+
+    .contact-list {
+        width: 96%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .person {
+        display: flex;
+        gap: 21px;
+        align-items: center;
+    }
+    
+    .contact-image {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+    }
+    
+    .contact-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+    }
+    
+    .details a {
+        color: white;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 12px;
+    }
+    
+    .details a:hover {
+        color: #525252;
+        text-decoration: underline;
     }
 
 /*/////////////////////////////////////////////////////////*/
