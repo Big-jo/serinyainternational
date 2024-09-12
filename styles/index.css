@@ -304,11 +304,19 @@ li {
     width: 100%;
 }
 
+.xs-more {
+    display: none
+}
+
 .less {
     text-align: center;
     color: #7c7c7c;
     width: 100%;
     display: none;
+}
+
+.xs-less {
+    display: none
 }
 
 .more:hover, .less:hover {
