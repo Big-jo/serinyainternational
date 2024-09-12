@@ -263,29 +263,6 @@
     object-fit: cover;
 }
 
-.xs-more {
-    text-align: center;
-    color: #7c7c7c;
-    width: 100%;
-    display: block;
-}
-
-.xs-less {
-    text-align: center;
-    color: #7c7c7c;
-    width: 100%;
-    display: none;
-}
-
-.more, .less {
-    display: none;
-}
-
-.xs-more:hover, .xs-less:hover {
-    text-align: center;
-    color: #ffffff;
-    width: 100%;
-}
 /*/////////////////////////////////////////////////////////*/
 /* GET IN TOUCH */
     .get-in-touch {

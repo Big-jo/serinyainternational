@@ -284,7 +284,6 @@ li {
     flex-wrap: wrap;
     gap: 9px;
     justify-content: flex-start;
-    
 }
 
 .g-img {
@@ -311,14 +310,11 @@ li {
     display: none;
 }
 
-.xs-more, .xs-less {
-    display: none
-}
-
 .more:hover, .less:hover {
     text-align: center;
     color: #ffffff;
     width: 100%;
+    cursor: pointer;
 }
 
 /*/////////////////////////////////////////////////////////*/
