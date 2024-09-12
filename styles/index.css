@@ -304,10 +304,6 @@ li {
     width: 100%;
 }
 
-.xs-more {
-    display: none
-}
-
 .less {
     text-align: center;
     color: #7c7c7c;
@@ -315,7 +311,7 @@ li {
     display: none;
 }
 
-.xs-less {
+.xs-more, .xs-less {
     display: none
 }
 
