@@ -110,17 +110,33 @@ function showSlides(n) {
 
 
 var more = document.getElementById("more");
+var xs-more = document.getElementById("xs-more");
 var less = document.getElementById("less");
+var xs-less = decument.getElementById("xs-less")
 var images = document.getElementById("more-images");
+var xs-images = document.getElementById("xs-more-images");
+
 
 more.onclick = function (){
     images.style.display = "flex"
     more.style.display = "none"
     less.style.display = "block"
-}
+};
+
+xs.more.onclick = function (){
+    xs-images.style.display = "flex"
+    xs-more.style.display = "none"
+    xs-less.style.display = "block"
+};
 
 less.onclick = function (){
     images.style.display = "none"
     more.style.display = "block"
     less.style.display = "none"
-}
+};
+
+xs-less.onclick = function (){
+    xs-images.style.display = "none"
+    xs-more.style.display = "block"
+    xs-less.style.display = "none"
+};
