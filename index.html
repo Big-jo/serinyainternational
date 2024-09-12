@@ -35,35 +35,13 @@
                 <div class="contact-list">
                     <div class="person">
                         <div class="contact-image">
-                            <img src="img/akpet.jpg" alt="">
+                            <img src="img/staff_cal.jpg" alt="">
                         </div>
                         <ul class="details">
-                            <li><h4>AKPET, Kohly M. Obaji</h4></li>
-                            <li><a href="tel:+234.803.697.0656">+234 803 697 0656</a></li>
-                            <li><a href="">akpet@sedekdoors.com</a></li>
-                            <li><a href="">Lagos</a></li>
-                        </ul>
-                    </div>
-                    <div class="person">
-                        <div class="contact-image">
-                            <img src="img/daniella.jpg" alt="">
-                        </div>
-                        <ul class="details">
-                            <li><h4>OSIM, Daniella</h4></li>
-                            <li><a href="tel:+234.803.697.0656">+234 xxx xxx xxxx</a></li>
-                            <li><a href="">daniella@sedekdoors.com</a></li>
+                            <li><h4>Mr. Anietie Antia</h4></li>
+                            <li><a href="tel:+234.806.612.5576">+234 806 612 5576</a></li>
+                            <li><a href="">anietie@sedekdoors.com</a></li>
                             <li><a href="">Calabar</a></li>
-                        </ul>
-                    </div>
-                    <div class="person">
-                        <div class="contact-image">
-                            <img src="img/osangha.jpg" alt="">
-                        </div>
-                        <ul class="details">
-                            <li><h4>AKPET, Osangha Konye</h4></li>
-                            <li><a href="tel:+234.803.697.0656">+234 xxx xxx xxxx</a></li>
-                            <li><a href="">osangha@sedekdoors.com</a></li>
-                            <li><a href="">Port Harcourt</a></li>
                         </ul>
                     </div>
                 </div>
@@ -87,7 +65,9 @@
 
     <!-- PRODUCTS SECTION -->
     <div class="products-section">
-        <div id="modal-molded-door" class="modal">
+        <!-- MODALS - HTML SETUP -->
+        <!-- Molded Panel Doors Modal -->
+        <div id="molded-door" class="modal">
             <div class="modal-header">
                 <h3>Molded Panel Doors</h3>
                 <h3 class="fa fa-close" id="close-molded-door"></h3>
@@ -95,7 +75,7 @@
 
             <div class="modal-images">
                 <div class="moldedSlides fade">
-                    <img src="img/molded_3.png" alt="">
+                    <img src="img/glass_insert_3.png" alt="">
                 </div>
                 <div class="moldedSlides fade">
                     <img src="img/molded_2.png" alt="">
@@ -103,30 +83,16 @@
                 <div class="moldedSlides fade">
                     <img src="img/molded_1.png" alt="">
                 </div>
-                <div class="moldedSlidess fade">
-                    <img src="img/molded_4.png" alt="">
-                </div>
-                <div class="moldedSlides fade">
-                    <img src="img/molded_5.png" alt="">
-                </div>
-                <div class="moldedSlides fade">
-                    <img src="img/molded_6.png" alt="">
-                </div>
-                <div class="moldedSlides fade">
-                    <img src="img/molded_7.png" alt="">
-                </div>
-                <div class="moldedSlidess fade">
-                    <img src="img/molded_8.png" alt="">
-                </div>
-                <div class="moldedSlides fade">
-                    <img src="img/molded_9.png" alt="">
-                </div>
-                <div class="moldedSlidess fade">
-                    <img src="img/molded_10.png" alt="">
+
+                <!-- Next and Previous Buttons -->
+                <div class="modal-controls">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
             </div>
         </div>
 
+        <!-- Double Door Modal -->
         <div id="modal-double-door" class="modal">
             <div class="modal-header">
                 <h3>Double Doors</h3>
@@ -137,15 +103,16 @@
                 <div class="doubleSlides fade">
                     <img src="img/double_door_1.jpeg" alt="">
                 </div>
-                <div class="doubleSlides fade">
-                    <img src="img/double_door_2.png" alt="">
-                </div>
-                <div class="doubleSlides fade">
-                    <img src="img/double_door.jpeg" alt="">
+
+                <!-- Next and Previous Buttons -->
+                <div class="modal-controls">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
             </div>
         </div>
 
+        <!-- Glass Insert Door Modal -->
         <div id="modal-glass-insert" class="modal">
             <div class="modal-header">
                 <h3>Glass Insert Doors</h3>
@@ -156,18 +123,16 @@
                 <div class="glassSlides fade">
                     <img src="img/glass_insert.jpeg" alt="">
                 </div>
-                <div class="glassSlides fade">
-                    <img src="img/glass_insert_1.png" alt="">
-                </div>
-                <div class="glassSlides fade">
-                    <img src="img/glass_insert_2.png" alt="">
-                </div>
-                <div class="glassSlides fade">
-                    <img src="img/glass_insert_3.png" alt="">
+
+                <!-- Next and Previous Buttons -->
+                <div class="modal-controls">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
             </div>
         </div>
 
+        <!-- Planate FLush Door Modal -->
         <div id="modal-planate-door" class="modal">
             <div class="modal-header">
                 <h3>Planate Flush Doors</h3>
@@ -178,17 +143,11 @@
                 <div class="planateSlides fade">
                     <img src="img/planate_1.png" alt="">
                 </div>
-                <div class="planateSlides fade">
-                    <img src="img/planate_2.png" alt="">
-                </div>
-                <div class="planateSlides fade">
-                    <img src="img/planate_3.png" alt="">
-                </div>
-                <div class="planateSlides fade">
-                    <img src="img/planate_4.png" alt="">
-                </div>
-                <div class="planateSlides fade">
-                    <img src="img/planate_door.png" alt="">
+
+                <!-- Next and Previous Buttons -->
+                <div class="modal-controls">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
             </div>
         </div>
@@ -249,7 +208,46 @@
 
     <!-- GALLERY -->
     <div class="gallery">
+        <div class="gallery-header">
+            <h1>GALLERY</h1>
+        </div>
 
+        <div class="gallery-images">
+            <div class="g-img">
+                <img src="img/double_door.jpeg" alt="">
+            </div>
+            <div class="g-img">
+                <img src="img/planate_2.png" alt="">
+            </div>
+            <div class="g-img">
+                <img src="img/double_door_2.png" alt="">
+            </div>
+            <div class="g-img">
+                <img src="img/double_door_1.jpeg" alt="">
+            </div>
+            <div class="g-img">
+                <img src="img/glass_insert_2.png" alt="">
+            </div>
+            <div class="g-img">
+                <img src="img/glass_insert_3.png" alt="">
+            </div>
+            <div class="g-img">
+                <img src="img/planate_3.png" alt="">
+            </div>
+            <div class="g-img">
+                <img src="img/molded_1.png" alt="">
+            </div>
+            <p id="more">View more</p>
+            <div class="img-cont">
+                <div class="g-img">
+                    <img src="img/molded_8.png" alt="">
+                </div>
+                <div class="g-img">
+                    <img src="img/double_door.jpeg" alt="">
+                </div>
+            </div>
+            <p id="less">View less</p>
+        </div>
     </div>
 
     <!-- GET IN TOUCH -->

@@ -1,157 +1,109 @@
+/////////////////////////////////////////////////////////////////////
 // CONTACT US BUTTON & POPUP CONTROLS
 var contact = document.getElementById("contact");
 var contactList = document.getElementById("contactList");
 var closeContact = document.getElementById("closeContact");
 
+// Display the contact list on botton click
 contact.onclick = function () {
     contactList.style.display = "block";
-}
+};
 
+// Close the contact list on the close botton click
 closeContact.onclick = function () {
     contactList.style.display = "none";
-}
-
-// SLIDS CONTROLS FOR MOLDED PANEL DOORS
-var moldedSlideIndex = 0;
-showMoldedSlides();
-
-function showMoldedSlides() {
-    var i;
-    var moldedSlides = document.getElementsByClassName("moldedSlides");
-    for (i = 0; i < moldedSlides.length; i++) {
-        moldedSlides[i].style.display = "none";
-    }
-    moldedSlideIndex++;
-    if (moldedSlideIndex > moldedSlides.length) {moldedSlideIndex = 1}
-    moldedSlides[moldedSlideIndex-1].style.display = "block";
-    setTimeout(showMoldedSlides, 5000); // Change image every 5 seconds
-}
-
-// SLIDS CONTROLS FOR DOUBLE DOORS
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("doubleSlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 5000); // Change image every 5 seconds
 };
 
-// SLIDS CONTROLS FOR GLASS INSERT DOORS
-var glassSlideIndex = 0;
-showGlassSlides();
-
-function showGlassSlides() {
-    var i;
-    var glassSlides = document.getElementsByClassName("glassSlides");
-    for (i = 0; i < glassSlides.length; i++) {
-        glassSlides[i].style.display = "none";
-    }
-    glassSlideIndex++;
-    if (glassSlideIndex > glassSlides.length) {glassSlideIndex = 1}
-    glassSlides[glassSlideIndex-1].style.display = "block";
-    setTimeout(showGlassSlides, 5000); // Change image every 5 seconds
+/////////////////////////////////////////////////////////////////////
+// EXPLORE OPTIONS BOTTON CONTROLS
+// Function to open the modal
+function openModal(modalId) {
+    const modal = document.getElementById(modalId); // Get the modal by ID
+    modal.style.display = "block"; // Get the modal by ID
+    showSlides(slideIndex)
 }
 
-// SLIDS CONTROLS FOR PLANATE FLUSH DOORS
-var planateSlideIndex = 0;
-showPlanateSlides();
-
-function showPlanateSlides() {
-    var i;
-    var planateSlides = document.getElementsByClassName("planateSlides");
-    for (i = 0; i < planateSlides.length; i++) {
-        planateSlides[i].style.display = "none";
-    }
-    planateSlideIndex++;
-    if (planateSlideIndex > planateSlides.length) {planateSlideIndex = 1}
-    planateSlides[planateSlideIndex-1].style.display = "block";
-    setTimeout(showPlanateSlides, 5000); // Change image every 5 seconds
+// Function to close the modal
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId); // Get the modal by ID
+    modal.style.display = "none"; // Hide the modal
 }
 
-// Controls for Modal
-var molded_close = document.getElementById("close-molded-door");
-var double_close = document.getElementById("close-double-door");
-var glass_close = document.getElementById("close-glass-insert");
-var planate_close = document.getElementById("close-planate-door");
+// Event listeners for the "Explore Options" buttons
+document.getElementById("molded_door_btn").addEventListener("click", function() {
+    openModal("molded-door");
+});
 
-var molded_door_btn = document.getElementById("molded_door_btn");
-var double_door_btn = document.getElementById("double_door_btn");
-var glass_insert_btn = document.getElementById("glass_insert_btn");
-var planate_door_btn = document.getElementById("planate_door_btn");
+document.getElementById("double_door_btn").addEventListener("click", function() {
+    openModal("modal-double-door");
+});
 
-var molded_door = document.getElementById("modal-molded-door");
-var double_door = document.getElementById("modal-double-door");
-var glass_insert = document.getElementById("modal-glass-insert");
-var planate_door = document.getElementById("modal-planate-door");
+document.getElementById("glass_insert_btn").addEventListener("click", function() {
+    openModal("modal-glass-insert");
+});
 
+document.getElementById("planate_door_btn").addEventListener("click", function() {
+    openModal("modal-planate-door");
+});
 
-molded_door_btn.onclick = function () {
-    molded_door.style.display = "block";
-    showMoldedSlides();
-}
+// Event listeners to close the modals
+document.getElementById("close-molded-door").addEventListener("click", function() {
+    closeModal("molded-door");
+});
 
-molded_close.onclick = function () {
-    molded_door.style.display = "none";
-};
+document.getElementById("close-double-door").addEventListener("click", function() {
+    closeModal("modal-double-door");
+});
 
-double_door_btn.onclick = function () {
-    double_door.style.display = "block";
-    showSlides();
-}
+document.getElementById("close-glass-insert").addEventListener("click", function() {
+    closeModal("modal-glass-insert");
+});
 
-double_close.onclick = function () {
-    double_door.style.display = "none";
-};
+document.getElementById("close-planate-door").addEventListener("click", function() {
+    closeModal("modal-planate-door");
+});
 
-glass_insert_btn.onclick = function () {
-    glass_insert.style.display = "block";
-    showGlassSlides();
-};
-
-glass_close.onclick = function () {
-    glass_insert.style.display = "none";
-};
-
-planate_door_btn.onclick = function () {
-    planate_door.style.display = "block";
-};
-
-planate_close.onclick = function () {
-    planate_door.style.display = "none";
-}
-
+// Close the modal if clicked outside of it
 window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
+    const modals = document.querySelectorAll(".modal");
+    modals.forEach(function(modal) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+};
+
+
+
+////////////////////////////////////////////////////////
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Function to increment/decrement slide index
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Function to show the appropriate slide
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("moldedSlides");
+
+  // Loop back to first slide if n exceeds the total number of slides
+  if (n > slides.length) {
+    slideIndex = 1;
   }
 
-//   JS for SlideShow on Mobile View
+  // Loop to last slide if n is less than 1
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
 
+  // Hide all slides
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
 
-
-
-
-
-
-// let slideIndex = 0;
-// showSlides();
-
-// function showSlides() {
-//     let i;
-//     let slides = document.getElementsByClassName("mySlides");
-//     for (i = 0; i < slides.length; i++) {
-//       slides[i].style.display = "none";
-//     }
-//     slideIndex++;
-//     if (slideIndex > slides.length) {slideIndex = 1}
-//     slides[slideIndex-1].style.display = "block";
-//     setTimeout(showSlides, 2000); // Change image every 2 seconds
-//   }
+  // Show the current slide
+  slides[slideIndex - 1].style.display = "block";
+}

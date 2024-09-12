@@ -125,12 +125,14 @@ li {
     font-size: 15px;
 }
 
+/*//////////////////////////////////*/
+/* Contact List Popup Styles */
 .contact-list {
     width: 90%;
     margin: auto;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     gap: 90px;
 }
 
@@ -219,7 +221,6 @@ li {
     padding: 0 0 1.5% 0;
 }
 
-/* MODAL (PRODUCTS) */
 .modal-images {
     width: 75%;
     margin: 0 auto;
@@ -229,7 +230,6 @@ li {
 .fade {
     width: 100%;
     height: 100%;
-    display: none;
 }
 
 .fade img {
@@ -238,11 +238,64 @@ li {
     height: 100%;
 }
 
+.modal-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+
+.modal-controls a {
+    color: #7c7c7c;
+    cursor: pointer;
+}
+
 /*/////////////////////////////////////////////////////////*/
 /* GALLERY */
 .gallery {
     background-color: #3C1C0B;
-    height: 600px;
+    padding: 3% 0;
+}
+
+.gallery-header h1 {
+    color: #ffffff;
+    text-align: center;
+    word-spacing: 21px;
+
+}
+
+.gallery-images {
+    width: 87%;
+    margin: auto;
+    padding: 1.5% 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: flex-start;
+}
+
+.img-cont {
+    display: none;
+    width: 100%;
+    margin: auto;
+    padding:  0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: flex-start;
+}
+
+.g-img {
+    width: 24%;
+    height: 300px;
+}
+
+.g-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*/////////////////////////////////////////////////////////*/
