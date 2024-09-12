@@ -107,3 +107,20 @@ function showSlides(n) {
   // Show the current slide
   slides[slideIndex - 1].style.display = "block";
 }
+
+
+var more = document.getElementById("more");
+var less = document.getElementById("less");
+var images = document.getElementById("more-images");
+
+more.onclick = function (){
+    images.style.display = "flex"
+    more.style.display = "none"
+    less.style.display = "block"
+}
+
+less.onclick = function (){
+    images.style.display = "none"
+    more.style.display = "block"
+    less.style.display = "none"
+}

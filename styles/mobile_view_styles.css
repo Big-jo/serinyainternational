@@ -218,7 +218,70 @@
 
 /*/////////////////////////////////////////////////////////*/
 /* GALLERY */
+.gallery {
+    background-color: #3C1C0B;
+    padding: 3% 0;
+}
 
+.gallery-header h1 {
+    color: #ffffff;
+    text-align: center;
+    word-spacing: 18px;
+
+}
+
+.gallery-images {
+    width: 96%;
+    margin: auto;
+    padding: 1.5% 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: flex-start;
+}
+
+.img-cont {
+    width: 100%;
+    margin: auto;
+    padding:  0;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: flex-start;
+    
+}
+
+.g-img {
+    width: 47%;
+    height: 270px;
+}
+
+.g-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.more {
+    text-align: center;
+    color: #7c7c7c;
+    width: 100%;
+}
+
+.less {
+    text-align: center;
+    color: #7c7c7c;
+    width: 100%;
+    display: none;
+}
+
+.more:hover, .less:hover {
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+}
 /*/////////////////////////////////////////////////////////*/
 /* GET IN TOUCH */
     .get-in-touch {

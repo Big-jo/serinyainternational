@@ -276,15 +276,15 @@ li {
 }
 
 .img-cont {
-    display: none;
     width: 100%;
     margin: auto;
     padding:  0;
-    display: flex;
+    display: none;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 9px;
     justify-content: flex-start;
+    
 }
 
 .g-img {
@@ -296,6 +296,25 @@ li {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.more {
+    text-align: center;
+    color: #7c7c7c;
+    width: 100%;
+}
+
+.less {
+    text-align: center;
+    color: #7c7c7c;
+    width: 100%;
+    display: none;
+}
+
+.more:hover, .less:hover {
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
 }
 
 /*/////////////////////////////////////////////////////////*/
