@@ -241,7 +241,7 @@
     justify-content: flex-start;
 }
 
-.img-cont {
+.xs-img-contd {
     width: 100%;
     margin: auto;
     padding:  0;
@@ -250,7 +250,6 @@
     flex-wrap: wrap;
     gap: 9px;
     justify-content: flex-start;
-    
 }
 
 .g-img {
@@ -264,20 +263,24 @@
     object-fit: cover;
 }
 
-.more {
+.xs-more {
     text-align: center;
     color: #7c7c7c;
     width: 100%;
 }
 
-.less {
+.xs-less {
     text-align: center;
     color: #7c7c7c;
     width: 100%;
     display: none;
 }
 
-.more:hover, .less:hover {
+.more, .less {
+    display: none;
+}
+
+.xs-more:hover, .xs-less:hover {
     text-align: center;
     color: #ffffff;
     width: 100%;
