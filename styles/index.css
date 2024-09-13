@@ -196,7 +196,7 @@ li {
     height: 100%;
 }
 
-/*/////////////////////////////////////////////////////////*/
+/*//////////////////////////////////*/
 /* MODAL */
 .modal {
     display: none;
@@ -239,10 +239,12 @@ li {
 }
 
 .modal-controls {
+    position: relative;
+    top: -50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 30px;
+    font-size: 39px;
 }
 
 .modal-controls a {

@@ -65,94 +65,7 @@
 
     <!-- PRODUCTS SECTION -->
     <div class="products-section">
-        <!-- MODALS - HTML SETUP -->
-        <!-- Molded Panel Doors Modal -->
-        <div id="molded-door" class="modal">
-            <div class="modal-header">
-                <h3>Molded Panel Doors</h3>
-                <h3 class="fa fa-close" id="close-molded-door"></h3>
-            </div>
-
-            <div class="modal-images">
-                <div class="moldedSlides fade">
-                    <img src="img/glass_insert_3.png" alt="">
-                </div>
-                <div class="moldedSlides fade">
-                    <img src="img/molded_2.png" alt="">
-                </div>
-                <div class="moldedSlides fade">
-                    <img src="img/molded_1.png" alt="">
-                </div>
-
-                <!-- Next and Previous Buttons -->
-                <div class="modal-controls">
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Double Door Modal -->
-        <div id="modal-double-door" class="modal">
-            <div class="modal-header">
-                <h3>Double Doors</h3>
-                <h3 class="fa fa-close" id="close-double-door"></h3>
-            </div>
-
-            <div class="modal-images">
-                <div class="doubleSlides fade">
-                    <img src="img/double_door_1.jpeg" alt="">
-                </div>
-
-                <!-- Next and Previous Buttons -->
-                <div class="modal-controls">
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Glass Insert Door Modal -->
-        <div id="modal-glass-insert" class="modal">
-            <div class="modal-header">
-                <h3>Glass Insert Doors</h3>
-                <h3 class="fa fa-close" id="close-glass-insert"></h3>
-            </div>
-
-            <div class="modal-images">
-                <div class="glassSlides fade">
-                    <img src="img/glass_insert.jpeg" alt="">
-                </div>
-
-                <!-- Next and Previous Buttons -->
-                <div class="modal-controls">
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Planate FLush Door Modal -->
-        <div id="modal-planate-door" class="modal">
-            <div class="modal-header">
-                <h3>Planate Flush Doors</h3>
-                <h3 class="fa fa-close" id="close-planate-door"></h3>
-            </div>
-
-            <div class="modal-images">
-                <div class="planateSlides fade">
-                    <img src="img/planate_1.png" alt="">
-                </div>
-
-                <!-- Next and Previous Buttons -->
-                <div class="modal-controls">
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-            </div>
-        </div>
-
-
+        <!-- (PRODUCT) Molded Panel Doors -->
         <div class="products">
             <div class="product-description">
                 <h2>Molded Panel Doors</h2>
@@ -164,8 +77,35 @@
             <div class="product-image">
                 <img src="img/molded_1.png" alt="">
             </div>
+
+            <!-- Molded Panel Doors Modal -->
+            <div id="molded-door" class="modal">
+                <div class="modal-header">
+                    <h3>Molded Panel Doors</h3>
+                    <h3 class="molded-close-btn fa fa-close"></h3>
+                </div>
+
+                <div class="modal-images">
+                    <div class="molded-Slides fade">
+                        <img src="img/molded_3.png" alt="">
+                    </div>
+                    <div class="molded-Slides fade">
+                        <img src="img/molded_2.png" alt="">
+                    </div>
+                    <div class="molded-Slides fade">
+                        <img src="img/molded_1.png" alt="">
+                    </div>
+
+                    <!-- Next and Previous Buttons -->
+                    <div class="modal-controls">
+                        <a class="molded-prev">&#10094;</a>
+                        <a class="molded-next">&#10095;</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <!-- (PRODUCT) Double Doors -->
         <div class="products">
             <div class="product-description">
                 <h2>Double Doors</h2>
@@ -177,21 +117,75 @@
             <div class="product-image">
                 <img src="img/double_door.jpeg" alt="">
             </div>
+
+            <!-- Double Doors Modal -->
+            <div id="double-door" class="modal">
+                <div class="modal-header">
+                    <h3>Double Doors</h3>
+                    <h3 class="double-close-btn fa fa-close"></h3>
+                </div>
+
+                <div class="modal-images">
+                    <div class="double-slides fade">
+                        <img src="img/double_door_1.jpeg" alt="">
+                    </div>
+                    <div class="double-slides fade">
+                        <img src="img/double_door_2.png" alt="">
+                    </div>
+                    <div class="double-slides fade">
+                        <img src="img/double_door.jpeg" alt="">
+                    </div>
+
+                    <!-- Next and Previous Buttons -->
+                    <div class="modal-controls">
+                        <a class="double-prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="double-next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <!-- (PRODUCT) Glass Insert Doors -->
         <div class="products">
             <div class="product-description">
                 <h2>Glass Insert Doors</h2>
                 <p>Glass insert doors add sophistication, style, and elegance to any space. They brighten interiors by allowing natural light in, creating a spacious and open feel. With various glass types and designs available, you can balance privacy and aesthetics to suit your needs, whether you choose frosted glass for privacy or clear glass for a scenic view.</p>
 
-                <p class="btn white-btn" id="glass_insert_btn">Explore Options</p>
+                <p class="btn white-btn" id="glass_door_btn">Explore Options</p>
             </div>
 
             <div class="product-image">
                 <img src="img/glass_insert.jpeg" alt="">
             </div>
+
+            <!-- Glass Doors Modal -->
+            <div id="glass-door" class="modal">
+                <div class="modal-header">
+                    <h3>Glass Insert Doors</h3>
+                    <h3 class="glass-close-btn fa fa-close"></h3>
+                </div>
+
+                <div class="modal-images">
+                    <div class="glass-slides fade">
+                        <img src="img/glass_insert_1.png" alt="">
+                    </div>
+                    <div class="glass-slides fade">
+                        <img src="img/glass_insert_2.png" alt="">
+                    </div>
+                    <div class="glass-slides fade">
+                        <img src="img/glass_insert_3.png" alt="">
+                    </div>
+
+                    <!-- Next and Previous Buttons -->
+                    <div class="modal-controls">
+                        <a class="glass-prev">&#10094;</a>
+                        <a class="glass-next">&#10095;</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <!-- (PRODUCT) Planate Flush Doors -->
         <div class="products">
             <div class="product-description">
                 <h2>Planate Flush Doors</h2>
@@ -202,6 +196,32 @@
 
             <div class="product-image">
                 <img src="img/planate_door.png" alt="">
+            </div>
+
+            <!-- Planate Doors Modal -->
+            <div id="planate-door" class="modal">
+                <div class="modal-header">
+                    <h3>Planate Flush Doors</h3>
+                    <h3 class="planate-close-btn fa fa-close"></h3>
+                </div>
+
+                <div class="modal-images">
+                    <div class="planate-Slides fade">
+                        <img src="img/planate_1.png" alt="">
+                    </div>
+                    <div class="planate-Slides fade">
+                        <img src="img/planate_3.png" alt="">
+                    </div>
+                    <div class="planate-Slides fade">
+                        <img src="img/planate_2.png" alt="">
+                    </div>
+
+                    <!-- Next and Previous Buttons -->
+                    <div class="modal-controls">
+                        <a class="planate-prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="planate-next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -305,5 +325,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/slideshow.js"></script>
 </body>
 </html>

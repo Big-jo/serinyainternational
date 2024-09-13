@@ -14,105 +14,11 @@ closeContact.onclick = function () {
     contactList.style.display = "none";
 };
 
-/////////////////////////////////////////////////////////////////////
-// EXPLORE OPTIONS BOTTON CONTROLS
-// Function to open the modal
-function openModal(modalId) {
-    const modal = document.getElementById(modalId); // Get the modal by ID
-    modal.style.display = "block"; // Get the modal by ID
-    showSlides(slideIndex)
-}
-
-// Function to close the modal
-function closeModal(modalId) {
-    const modal = document.getElementById(modalId); // Get the modal by ID
-    modal.style.display = "none"; // Hide the modal
-}
-
-// Event listeners for the "Explore Options" buttons
-document.getElementById("molded_door_btn").addEventListener("click", function() {
-    openModal("molded-door");
-});
-
-document.getElementById("double_door_btn").addEventListener("click", function() {
-    openModal("modal-double-door");
-});
-
-document.getElementById("glass_insert_btn").addEventListener("click", function() {
-    openModal("modal-glass-insert");
-});
-
-document.getElementById("planate_door_btn").addEventListener("click", function() {
-    openModal("modal-planate-door");
-});
-
-// Event listeners to close the modals
-document.getElementById("close-molded-door").addEventListener("click", function() {
-    closeModal("molded-door");
-});
-
-document.getElementById("close-double-door").addEventListener("click", function() {
-    closeModal("modal-double-door");
-});
-
-document.getElementById("close-glass-insert").addEventListener("click", function() {
-    closeModal("modal-glass-insert");
-});
-
-document.getElementById("close-planate-door").addEventListener("click", function() {
-    closeModal("modal-planate-door");
-});
-
-// Close the modal if clicked outside of it
-window.onclick = function(event) {
-    const modals = document.querySelectorAll(".modal");
-    modals.forEach(function(modal) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    });
-};
-
-
-
-////////////////////////////////////////////////////////
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Function to increment/decrement slide index
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Function to show the appropriate slide
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("moldedSlides");
-
-  // Loop back to first slide if n exceeds the total number of slides
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-
-  // Loop to last slide if n is less than 1
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-
-  // Hide all slides
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  // Show the current slide
-  slides[slideIndex - 1].style.display = "block";
-}
-
-
+///////////////////////////////////////////////////////////////////////
+// GALLERY CONTORLS
 var more = document.getElementById("more");
 var less = document.getElementById("less");
 var images = document.getElementById("more-images");
-
 
 more.onclick = function (){
     images.style.display = "flex"
@@ -125,3 +31,119 @@ less.onclick = function (){
     more.style.display = "block"
     less.style.display = "none"
 };
+
+// //////////////////////////////////////////////////////////////////////
+// // Variables for all modals and buttons
+// const moldedDoorModal = document.getElementById('molded-door');
+// const doubleDoorModal = document.getElementById('double-door');
+// const glassInsertModal = document.getElementById('modal-glass-insert');
+// const planateDoorModal = document.getElementById('modal-planate-door');
+
+// const moldedDoorBtn = document.getElementById('molded_door_btn');
+// const doubleDoorBtn = document.getElementById('double_door_btn');
+// const glassDoorBtn = document.getElementById('glass_door_btn');
+// const planateDoorBtn = document.getElementById('planate_door_btn');
+
+// const closeMolded = document.getElementById('close-molded-door');
+// const closeDouble = document.getElementById('close-double-door');
+// const closeGlassInsert = document.getElementById('close-glass-insert');
+// const closePlanate = document.getElementById('close-planate-door');
+
+// // Open Modal Functions
+// moldedDoorBtn.onclick = function() {
+//     moldedDoorModal.style.display = 'block';
+// };
+
+// doubleDoorBtn.onclick = function() {
+//     doubleDoorModal.style.display = 'block';
+// };
+
+// glassDoorBtn.onclick = function() {
+//     glassInsertModal.style.display = 'block';
+// };
+
+// planateDoorBtn.onclick = function() {
+//     planateDoorModal.style.display = 'block';
+// };
+
+// // Close Modal Functions
+// closeMolded.onclick = function() {
+//     moldedDoorModal.style.display = 'none';
+// };
+
+// closeDouble.onclick = function() {
+//     doubleDoorModal.style.display = 'none';
+// };
+
+// closeGlassInsert.onclick = function() {
+//     glassInsertModal.style.display = 'none';
+// };
+
+// closePlanate.onclick = function() {
+//     planateDoorModal.style.display = 'none';
+// };
+
+// // SlideShow Logic
+// let slideIndex = 1;
+// showSlides(slideIndex);
+
+// // Next/previous controls for different modals
+// function plusSlides(n, modalType) {
+//     showSlides(slideIndex += n, modalType);
+// }
+
+// // Display slides for different modals
+// function showSlides(n, modalType) {
+//     let slides, i;
+
+//     switch(modalType) {
+//         case 'molded':
+//             slides = document.getElementsByClassName('moldedSlides');
+//             break;
+//         case 'double':
+//             slides = document.getElementsByClassName('doubleSlides');
+//             break;
+//         case 'glass':
+//             slides = document.getElementsByClassName('glassSlides');
+//             break;
+//         case 'planate':
+//             slides = document.getElementsByClassName('planateSlides');
+//             break;
+//     }
+
+//     if (n > slides.length) { slideIndex = 1; }
+//     if (n < 1) { slideIndex = slides.length; }
+//     for (i = 0; i < slides.length; i++) {
+//         slides[i].style.display = 'none';
+//     }
+//     slides[slideIndex - 1].style.display = 'block';
+// }
+
+// // Event Listeners for the modal controls
+// document.querySelector('.prev').addEventListener('click', function() {
+//     plusSlides(-1, 'molded');
+// });
+// document.querySelector('.next').addEventListener('click', function() {
+//     plusSlides(1, 'molded');
+// });
+
+// document.querySelector('.prevDouble').addEventListener('click', function() {
+//     plusSlides(-1, 'double');
+// });
+// document.querySelector('.nextDouble').addEventListener('click', function() {
+//     plusSlides(1, 'double');
+// });
+
+// document.querySelector('.prevGlass').addEventListener('click', function() {
+//     plusSlides(-1, 'glass');
+// });
+// document.querySelector('.nextGlass').addEventListener('click', function() {
+//     plusSlides(1, 'glass');
+// });
+
+// document.querySelector('.prevPlanate').addEventListener('click', function() {
+//     plusSlides(-1, 'planate');
+// });
+// document.querySelector('.nextPlanate').addEventListener('click', function() {
+//     plusSlides(1, 'planate');
+// });
