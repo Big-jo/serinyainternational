@@ -55,7 +55,7 @@
     .hero-section {
         width: 100%;
         background-image: url(../img/hero-mobile.png);
-        background-size: cover;
+        background-size: contain;
     }
     
     .hero-content {
