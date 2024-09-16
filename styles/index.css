@@ -82,10 +82,9 @@ li {
 /* HERO */
 .hero-section {
     padding: 3% 0 9% 0;
-    width: 90%;
-    margin: auto;
+    width: 100%;
     background-image: url(../img/hero.png);
-    background-size: contain;
+    background-size: cover;
 
 }
 
