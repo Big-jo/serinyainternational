@@ -51,6 +51,7 @@ li {
 .btn {
     padding: 9px 21px;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .brown-btn {
