@@ -14,23 +14,35 @@ closeContact.onclick = function () {
     contactList.style.display = "none";
 };
 
-///////////////////////////////////////////////////////////////////////
-// GALLERY CONTORLS
-var more = document.getElementById("more");
-var less = document.getElementById("less");
-var images = document.getElementById("more-images");
+/////////////////////////////////////////////////////////////////////////
+// Terms and Shipping Controls
+var terms = document.getElementById("terms");
+var shipping = document.getElementById("shipping");
+var notice = document.getElementById("notice");
+var shippingNotice = document.getElementById("shipping-notice");
+var termsNotice = document.getElementById("terms-notice");
+var closeNotice = document.getElementById("close-notice")
 
-more.onclick = function (){
-    images.style.display = "flex"
-    more.style.display = "none"
-    less.style.display = "block"
-};
+terms.onclick = function (){
+    notice.style.display = "flex"
+    termsNotice.style.display = "block"
+    shippingNotice.style.display = "none"
+    closeNotice.style.display = "block"
+}
 
-less.onclick = function (){
-    images.style.display = "none"
-    more.style.display = "block"
-    less.style.display = "none"
-};
+shipping.onclick = function (){
+    notice.style.display = "flex"
+    shippingNotice.style.display = "block"
+    termsNotice.style.display = "none"
+    closeNotice.style.display = "block"
+}
+
+closeNotice.onclick =function () {
+    notice.style.display = "none"
+}
+
+
+
 
 // //////////////////////////////////////////////////////////////////////
 // // Variables for all modals and buttons
@@ -147,3 +159,4 @@ less.onclick = function (){
 // document.querySelector('.nextPlanate').addEventListener('click', function() {
 //     plusSlides(1, 'planate');
 // });
+

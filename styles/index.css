@@ -27,7 +27,6 @@ h3 {
     font-weight: 900;
     font-style: normal;
     font-size: 27px;
-    color: #FFFFFF;
 }
 
 h4 {
@@ -44,7 +43,7 @@ a {
     color: #000000;
 }
 
-li {
+ul li {
     list-style: none;
 }
 
@@ -52,12 +51,13 @@ li {
     padding: 9px 21px;
     border-radius: 6px;
     cursor: pointer;
+    box-shadow: 6px 6px 15px -6px #7c7c7c;
 }
 
 .brown-btn {
     background-color: #A2552E;
     color: #FFFFFF;
-    box-shadow: 6px 6px 15px -6px #7c7c7c;
+    border: 1px solid #A2552E;
 }
 
 .white-btn {
@@ -70,12 +70,15 @@ li {
     background-color: #FFFFFF;
     color: #3C1C0B;
     border: 1px solid #A2552E;
-    box-shadow: 6px 6px 15px -6px #7c7c7c;
 }
 
 .white-btn:hover {
     background-color: #A2552E;
     color: #FFFFFF;
+}
+
+.fa-close {
+    cursor: auto;
 }
 
 
@@ -383,3 +386,43 @@ footer {
     font-weight: 600;
     padding-bottom: 9px;
 }
+
+/* NOTICE - TERMS AND SHIPPING */
+#notice {
+    width: 60%;
+    margin: 1.5% auto;
+    display: none;
+    transition: display 2s ease;
+    padding: 3% 0;
+    border-top: #3C1C0B solid 1px;
+    border-bottom: #3C1C0B solid 1px;
+}
+
+.notice-btn a {
+    cursor: pointer;
+}
+
+#shipping-notice {
+    display: block;
+}
+
+#terms-notice {
+    display: none;
+}
+
+#notice p, #notice li {
+    font-size: 13.5px;
+}
+
+.notice-title {
+    font-size: 15px;
+    font-weight: 900;
+    padding: 12px 0;
+    margin-bottom: 24px;
+    border-bottom: 1px #3c1c0b5b solid;
+}
+
+ol {
+    padding: 6px 21px;
+}
+

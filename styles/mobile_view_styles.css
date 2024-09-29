@@ -385,5 +385,32 @@
         font-weight: 600;
         padding: 6px 0 9px 0;
     }
+
+    /* NOTICE - TERMS AND SHIPPING */
+    #notice {
+        width: 90%;
+        margin: 1.5% auto;
+        display: none;
+        transition: height 3s ease;
+        padding: 3% 0;
+        border-top: #3C1C0B solid 1px;
+        border-bottom: #3C1C0B solid 1px;
+    }
+
+    #notice p, #notice li {
+        font-size: 12px;
+    }
+
+    .notice-title {
+        font-size: 15px;
+        font-weight: 900;
+        padding: 12px 0;
+        margin-bottom: 24px;
+        border-bottom: 1px #3c1c0b5b solid;
+    }
+
+    ol {
+        padding: 6px 0 6px 18px;
+    }
 }
 
