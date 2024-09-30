@@ -392,7 +392,7 @@ footer {
     width: 60%;
     margin: 1.5% auto;
     display: none;
-    transition: display 2s ease;
+    transition: 3s ease height;
     padding: 3% 0;
     border-top: #3C1C0B solid 1px;
     border-bottom: #3C1C0B solid 1px;
