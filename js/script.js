@@ -48,16 +48,27 @@ const scriptURL =
 
 const messages = document.forms["get-in-touch-form"];
 
+const inputEmail = messages.elements["Email"];
+
+const inputMessage = messages.elements["Message"];
+
 messages.addEventListener("submit", (e) => {
   e.preventDefault();
-  fetch(scriptURL, { method: "POST", body: new FormData(messages) })
-    .then((response) =>
-      alert(
-        "Thank you. Your message has been recieved and we will respond shortly."
+
+  if (inputEmail.value === "") {
+    alert("Please, Email cannot be blank");
+  } else if (inputMessage.value === "") {
+    alert("Please, message field cannot be blank");
+  } else {
+    fetch(scriptURL, { method: "POST", body: new FormData(messages) })
+      .then((response) =>
+        alert(
+          "Thank you. Your message has been recieved and we will respond shortly."
+        )
       )
-    )
-    .then(() => {
-      window.location.reload();
-    })
-    .catch((error) => console.error("Error!", error.message));
+      .then(() => {
+        window.location.reload();
+      })
+      .catch((error) => console.error("Error!", error.message));
+  }
 });
