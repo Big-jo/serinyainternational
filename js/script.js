@@ -55,15 +55,20 @@ const inputMessage = messages.elements["Message"];
 messages.addEventListener("submit", (e) => {
   e.preventDefault();
 
+  // Regular expression to validate email format
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
   if (inputEmail.value === "") {
-    alert("Please, Email cannot be blank");
+    alert("Please, email cannot be blank");
+  } else if (!emailPattern.test(inputEmail.value)) {
+    alert("Please enter a valid email address");
   } else if (inputMessage.value === "") {
     alert("Please, message field cannot be blank");
   } else {
     fetch(scriptURL, { method: "POST", body: new FormData(messages) })
       .then((response) =>
         alert(
-          "Thank you. Your message has been recieved and we will respond shortly."
+          "Thank you, your message has been recieved and we will respond shortly."
         )
       )
       .then(() => {
