@@ -20,6 +20,7 @@ function showMoldedModal() {
 // Function to hide the modal
 function closeMoldedModal() {
   moldedModal.style.display = "none";
+  currentMoldedSlide = 0;
 }
 
 // Function to show the current slide
@@ -85,6 +86,7 @@ function showDoubleModal() {
 // Function to hide the modal
 function closeDoubleModal() {
   doubleModal.style.display = "none";
+  doubleCurrentSlide = 0;
 }
 
 // Function to show the current slide
@@ -152,6 +154,7 @@ function showGlassModal() {
 // Function to hide the modal
 function closeGlassModal() {
   glassModal.style.display = "none";
+  glassCurrentSlide = 0;
 }
 
 // Function to show the current slide
@@ -219,6 +222,7 @@ function showPlanateModal() {
 // Function to hide the modal
 function closePlanateModal() {
   planateModal.style.display = "none";
+  currentPlanateSlide = 0;
 }
 
 // Function to show the current slide
