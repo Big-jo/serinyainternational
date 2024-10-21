@@ -5,6 +5,14 @@
   font-family: "Open Sans", sans-serif;
 }
 
+.lg-screen {
+  display: none;
+}
+
+.gray {
+  color: #525252;
+}
+
 h1 {
   font-family: "Merriweather", serif;
   font-weight: 900;
